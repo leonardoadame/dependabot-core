@@ -24,7 +24,10 @@ cd "$install_dir"
 
 composer validate --no-check-publish
 composer install
-composer run lint -- --dry-run
+# TODO: https://github.com/dependabot/dependabot-core/issues/6523
+# Remove PHP_CS_FIXER_IGNORE_ENV once php-cs-fixer adds support for 8.2
+# https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues?q=is%3Aissue+is%3Aopen+8.2+label%3Atopic%2FPHP8.2
+PHP_CS_FIXER_IGNORE_ENV=true composer run lint -- --dry-run
 composer run stan
 
 # Composer caches source zips and repo metadata, none of which is useful. Save space in this layer
