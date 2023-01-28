@@ -128,27 +128,6 @@ RSpec.describe Dependabot::GoModules::FileUpdater do
     end
 
     context "without a clone of the repository" do
-      before do
-        # We don't have git configured in prod, so simulate the same setup here
-        Dir.chdir(repo_contents_path) do
-          # Only used to create a backup git config that's reset
-          Dependabot::SharedHelpers.with_git_configured(credentials: []) do
-            `git config --global --unset user.email`
-            `git config --global --unset user.name`
-          end
-        end
-      end
-
-      after do
-        Dir.chdir(repo_contents_path) do
-          # Only used to create a backup git config that's reset
-          Dependabot::SharedHelpers.with_git_configured(credentials: []) do
-            `git config --global user.email "no-reply@github.com"`
-            `git config --global user.name "dependabot-ci"`
-          end
-        end
-      end
-
       let(:updater) do
         described_class.new(
           dependency_files: files,
