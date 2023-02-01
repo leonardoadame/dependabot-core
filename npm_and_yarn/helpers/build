@@ -19,6 +19,7 @@ cp -r \
   "$helpers_dir/jest.config.js" \
   "$helpers_dir/package.json" \
   "$helpers_dir/package-lock.json" \
+  "$helpers_dir/patches" \
   "$install_dir"
 
 cd "$install_dir"
