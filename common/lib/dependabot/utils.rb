@@ -8,7 +8,7 @@ require "set"
 module Dependabot
   module Utils
     BUMP_TMP_FILE_PREFIX = "dependabot_"
-    BUMP_TMP_DIR_PATH = Dir::Tmpname.create("tmp", "tmp") { nil }
+    BUMP_TMP_DIR_PATH = File.expand_path(Dir::Tmpname.create("tmp", "tmp") { nil })
 
     @version_classes = {}
 
