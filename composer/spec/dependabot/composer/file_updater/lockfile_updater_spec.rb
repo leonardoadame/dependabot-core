@@ -393,8 +393,8 @@ RSpec.describe Dependabot::Composer::FileUpdater::LockfileUpdater do
       let(:dependency) do
         Dependabot::Dependency.new(
           name: "illuminate/contracts",
-          version: "5.2.45",
-          previous_version: "5.2.37",
+          version: "6.20.44",
+          previous_version: "6.20.0",
           requirements: [],
           previous_requirements: [],
           package_manager: "composer"
@@ -402,9 +402,9 @@ RSpec.describe Dependabot::Composer::FileUpdater::LockfileUpdater do
       end
 
       it "has details of the updated item" do
-        expect(updated_lockfile_content).to include("\"version\":\"v5.2.45\"")
+        expect(updated_lockfile_content).to include("\"version\":\"v6.20.44\"")
         expect(updated_lockfile_content).
-          to include("22bde7b048a33c702d9737fc1446234fff9b1363")
+          to include("6978681bcac4d5d6ce08ece13ebba319")
       end
 
       context "and is limited by a library's PHP version" do
@@ -753,17 +753,17 @@ RSpec.describe Dependabot::Composer::FileUpdater::LockfileUpdater do
       let(:dependency) do
         Dependabot::Dependency.new(
           name: "illuminate/support",
-          version: "5.6.23",
+          version: "10.1.5",
           requirements: [{
             file: "composer.json",
-            requirement: "^5.6.23",
+            requirement: "^10.1.5",
             groups: ["runtime"],
             source: nil
           }],
-          previous_version: "5.2.0",
+          previous_version: "v6.20.44",
           previous_requirements: [{
             file: "composer.json",
-            requirement: "^5.2.0",
+            requirement: "^6.0.0",
             groups: ["runtime"],
             source: nil
           }],
@@ -772,8 +772,8 @@ RSpec.describe Dependabot::Composer::FileUpdater::LockfileUpdater do
       end
 
       it "has details of the updated item" do
-        expect(updated_lockfile_content).to include("\"version\":\"v5.6.23\"")
-        expect(updated_lockfile_content).to include("ba383d0a3bf6aa0b7a1307fdc")
+        expect(updated_lockfile_content).to include("\"version\":\"v10.1.5\"")
+        expect(updated_lockfile_content).to include("6c4f052bc0659316b73f186334da5a07")
       end
     end
 
@@ -783,17 +783,17 @@ RSpec.describe Dependabot::Composer::FileUpdater::LockfileUpdater do
       let(:dependency) do
         Dependabot::Dependency.new(
           name: "illuminate/support",
-          version: "5.3.0",
+          version: "6.20.1",
           requirements: [{
             file: "composer.json",
-            requirement: "^5.2.0",
+            requirement: "^6.0.0",
             groups: ["runtime"],
             source: nil
           }],
-          previous_version: "5.2.0",
+          previous_version: "6.20.0",
           previous_requirements: [{
             file: "composer.json",
-            requirement: "^5.2.0",
+            requirement: "^6.0.0",
             groups: ["runtime"],
             source: nil
           }],
@@ -802,8 +802,8 @@ RSpec.describe Dependabot::Composer::FileUpdater::LockfileUpdater do
       end
 
       it "has details of the updated item" do
-        expect(updated_lockfile_content).to include("\"version\":\"v5.3.0\"")
-        expect(updated_lockfile_content).to include("e244eda135819216ac3044146")
+        expect(updated_lockfile_content).to include("\"version\":\"v6.20.1\"")
+        expect(updated_lockfile_content).to include("6978681bcac4d5d6ce08ece13ebba319")
       end
     end
 
