@@ -16,6 +16,10 @@ RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - \
 RUN corepack enable \
   && corepack prepare yarn@$YARN_VERSION --activate
 
+# Install pnpm and set it to a stable version
+RUN corepack enable \
+  && corepack prepare pnpm@8.2.0 --activate
+
 USER dependabot
 ENV DEPENDABOT_NATIVE_HELPERS_PATH="/opt"
 COPY --chown=dependabot:dependabot npm_and_yarn/helpers /opt/npm_and_yarn/helpers
