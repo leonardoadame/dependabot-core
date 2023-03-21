@@ -69,6 +69,7 @@ module Dependabot
         fetched_files << package_json
         fetched_files << package_lock if package_lock && !ignore_package_lock?
         fetched_files << yarn_lock if yarn_lock
+        fetched_files << pnpm_lock if pnpm_lock
         fetched_files << shrinkwrap if shrinkwrap
         fetched_files << lerna_json if lerna_json
         fetched_files << npmrc if npmrc
@@ -140,6 +141,10 @@ module Dependabot
 
       def yarn_lock
         @yarn_lock ||= fetch_file_if_present("yarn.lock")
+      end
+
+      def pnpm_lock
+        @pnpm_lock ||= fetch_file_if_present("pnpm-lock.yaml")
       end
 
       def shrinkwrap
