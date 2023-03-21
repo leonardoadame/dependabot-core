@@ -54,6 +54,7 @@ module Dependabot
 
         package_managers["npm"] = Helpers.npm_version_numeric(package_lock.content) if package_lock
         package_managers["yarn"] = yarn_version if yarn_version
+        package_managers["pnpm"] = pnpm_version if pnpm_version
         package_managers["shrinkwrap"] = 1 if shrinkwrap
 
         {
@@ -118,8 +119,7 @@ module Dependabot
       def yarn_version
         return @yarn_version if defined?(@yarn_version)
 
-        package = JSON.parse(package_json.content)
-        if (package_manager = package.fetch("packageManager", nil))
+        if (package_manager = parsed_package_manager)
           get_yarn_version_from_package_json(package_manager)
         elsif yarn_lock
           1
@@ -129,6 +129,25 @@ module Dependabot
       def get_yarn_version_from_package_json(package_manager)
         version_match = package_manager.match(/yarn@(?<version>\d+.\d+.\d+)/)
         version_match&.named_captures&.fetch("version", nil)
+      end
+
+      def pnpm_version
+        return @pnpm_version if defined?(@pnpm_version)
+
+        if (package_manager = parsed_package_manager)
+          get_pnpm_version_from_package_json(package_manager)
+        elsif pnpm_lock
+          8
+        end
+      end
+
+      def get_pnpm_version_from_package_json(package_manager)
+        version_match = package_manager.match(/pnpm@(?<version>\d+.\d+.\d+)/)
+        version_match&.named_captures&.fetch("version", nil)
+      end
+
+      def parsed_package_manager
+        parsed_package_json.fetch("packageManager", nil)
       end
 
       def package_json
