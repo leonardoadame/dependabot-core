@@ -39,6 +39,7 @@ module Dependabot
           # We should log the rule being executed, let's just hard-code wildcard for now
           # since the prototype makes best-effort to do everything in one pass.
           Dependabot.logger.info("Starting update group for '#{GROUP_NAME_PLACEHOLDER}'")
+          prepare_workspace
           dependency_change = compile_dependency_change
 
           if dependency_change.dependencies.any?
@@ -358,6 +359,17 @@ module Dependabot
 
           error_handler.handle_dependabot_error(error: e, dependency: lead_dependency)
           current_dependency_files # return the files unchanged
+        end
+
+        def prepare_workspace
+          return unless Dependabot::Experiments.enabled?(:shared_workspace)
+          return unless job.clone?
+          return if job.repo_contents_path.nil?
+
+          Dependabot::Workspace.active_workspace = Dependabot::Workspace::Git.new(
+            job.repo_contents_path,
+            Pathname.new(job.source.directory || "/").cleanpath
+          )
         end
       end
     end

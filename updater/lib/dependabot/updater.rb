@@ -29,6 +29,7 @@ require "dependabot/updater/error_handler"
 require "dependabot/updater/operations"
 require "dependabot/security_advisory"
 require "dependabot/update_checkers"
+require "dependabot/workspace"
 require "wildcard_matcher"
 
 # rubocop:disable Metrics/ClassLength
