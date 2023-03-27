@@ -70,6 +70,68 @@ RSpec.describe Dependabot::NpmAndYarn::FileParser::LockfileParser do
       end
     end
 
+    context "for pnpm lockfiles" do
+      let(:dependency_files) { project_dependency_files("pnpm/only_dev_dependencies") }
+
+      it "parses the dependencies" do
+        expect(dependencies.map(&:name)).to contain_exactly("etag")
+      end
+
+      context "that contains an empty version string" do
+        let(:dependency_files) { project_dependency_files("pnpm/empty_version") }
+
+        it "raises a DependencyFileNotParseable error" do
+          expect { dependencies }.
+            to raise_error(Dependabot::DependencyFileNotParseable) do |error|
+              expect(error.file_name).to eq("pnpm-lock.yaml")
+            end
+        end
+      end
+
+      context "that contains an aliased dependency" do
+        let(:dependency_files) { project_dependency_files("pnpm/aliased_dependency") }
+
+        it "excludes the dependency" do
+          # Lockfile contains 11 dependencies but one is an alias
+          expect(dependencies.count).to eq(10)
+          expect(dependencies.map(&:name)).to_not include("my-fetch-factory")
+        end
+      end
+
+      context "that contain multiple dependencies" do
+        let(:dependency_files) { project_dependency_files("pnpm/no_lockfile_change") }
+
+        its(:length) { is_expected.to eq(370) }
+
+        describe "a repeated dependency" do
+          subject { dependencies.find { |d| d.name == "async" } }
+
+          its(:version) { is_expected.to eq("1.5.2") }
+        end
+      end
+
+      context "that contains dependencies with multiple requirements" do
+        let(:dependency_files) { project_dependency_files("pnpm/multiple_requirements") }
+
+        its(:length) { is_expected.to eq(83) }
+
+        it "includes those dependencies" do
+          expect(dependencies.map(&:name)).to include("@nodelib/fs.stat")
+        end
+      end
+
+      context "that contain bad lockfile" do
+        let(:dependency_files) { project_dependency_files("pnpm/broken_lockfile") }
+
+        it "raises a DependencyFileNotParseable error" do
+          expect { dependencies }.
+            to raise_error(Dependabot::DependencyFileNotParseable) do |error|
+              expect(error.file_name).to eq("pnpm-lock.yaml")
+            end
+        end
+      end
+    end
+
     context "for npm lockfiles" do
       let(:dependency_files) { project_dependency_files("npm6/multiple_updates") }
 
