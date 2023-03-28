@@ -70,7 +70,7 @@ module Dependabot
         fetched_files << package_json
         fetched_files << package_lock if package_lock && !ignore_package_lock?
         fetched_files << yarn_lock if yarn_lock
-        fetched_files << pnpm_lock if pnpm_lock
+        fetched_files << pnpm_lock if pnpm_lock && !ignore_pnpm_lock?
         fetched_files << shrinkwrap if shrinkwrap
         fetched_files << lerna_json if lerna_json
         fetched_files << pnpm_workspace_yaml if pnpm_workspace_yaml
@@ -523,6 +523,12 @@ module Dependabot
         return false unless npmrc
 
         npmrc.content.match?(/^package-lock\s*=\s*false/)
+      end
+
+      def ignore_pnpm_lock?
+        return false unless npmrc
+
+        npmrc.content.match?(/^lock\s*=\s*false/)
       end
 
       def build_unfetchable_deps(unfetchable_deps)
