@@ -50,8 +50,21 @@ module Dependabot
         def run_pnpm_top_level_updater(pnpm_lock:)
           top_level_requirements = top_level_dependencies.map { |dependency| "#{dependency.name}@#{dependency.version}" }.join(" ")
 
-          update_lockfile(
+          previous_package_files_contents = package_files_contents
+
+          updated_lockfile_content = update_lockfile(
             command: "pnpm install #{top_level_requirements} --lockfile-only --ignore-workspace-root-check",
+            pnpm_lock: pnpm_lock
+          )
+
+          return updated_lockfile_content unless previous_package_files_contents != package_files_contents
+
+          package_files.zip(previous_package_files_contents).each do |file, previous_content|
+            File.write(file.name, previous_content)
+          end
+
+          update_lockfile(
+            command: "pnpm install --lockfile-only",
             pnpm_lock: pnpm_lock
           )
         end
@@ -91,7 +104,11 @@ module Dependabot
         end
 
         def package_files
-          dependency_files.select { |f| f.name.end_with?("package.json") }
+          @package_files ||= dependency_files.select { |f| f.name.end_with?("package.json") }
+        end
+
+        def package_files_contents
+          package_files.map { |file| File.read(file.name) }
         end
 
         def base_dir
