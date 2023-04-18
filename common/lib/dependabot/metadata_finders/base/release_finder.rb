@@ -18,7 +18,7 @@ module Dependabot
         end
 
         def releases_url
-          return unless source
+          return unless source && all_releases.any?
 
           case source.provider
           when "github" then "#{source.url}/releases"

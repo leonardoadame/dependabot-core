@@ -21,7 +21,7 @@ module Dependabot
         end
 
         def commits_url
-          return unless source
+          return unless source && dependency_tags
           return if source.provider == "codecommit" # TODO: Fetch Codecommit commits
 
           path =
@@ -37,7 +37,7 @@ module Dependabot
         end
 
         def commits
-          return [] unless source
+          return [] unless source && dependency_tags
           return [] unless new_tag && previous_tag
 
           case source.provider
@@ -56,6 +56,8 @@ module Dependabot
           return new_version if git_source?(dependency.requirements) && git_sha?(new_version)
 
           return new_ref if new_ref && ref_changed?
+
+          return unless dependency_tags
 
           tags = dependency_tags.
                  select { |tag| tag_matches_version?(tag, new_version) }.
@@ -166,7 +168,9 @@ module Dependabot
         end
 
         def dependency_tags
-          @dependency_tags ||= fetch_dependency_tags
+          return @dependency_tags if defined?(@dependency_tags)
+
+          @dependency_tags = fetch_dependency_tags
         end
 
         def fetch_dependency_tags
@@ -177,7 +181,7 @@ module Dependabot
         rescue Dependabot::GitDependenciesNotReachable,
                Octokit::ServiceUnavailable
           # ServiceUnavailable normally means a DMCA takedown
-          []
+          nil
         end
 
         def github_compare_path(new_tag, previous_tag)
