@@ -2095,7 +2095,7 @@ RSpec.describe Dependabot::PullRequestCreator::MessageBuilder do
             )
         end
 
-        it "truncates the subject line sensibly" do
+        it "truncates the subject line sensibly", :vcr do
           expect(commit_message).
             to start_with(
               "build(deps-dev): update postcss-import requirement\n"
