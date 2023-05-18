@@ -2,3 +2,4 @@ luigi==2.2.0
 --allow-external psycopg2
 --allow-unverified psycopg2
 psycopg2==2.6.1
+tornado>=6.3.2 # not directly required, pinned by Snyk to avoid a vulnerability
