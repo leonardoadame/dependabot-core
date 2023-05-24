@@ -1,2 +1,2 @@
 -c constraints.txt
-requests==2.4.1
+requests==2.31.0
