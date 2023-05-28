@@ -15,7 +15,7 @@ def get_dependency_hash(dependency_name, dependency_version, algorithm):
 
 
 def get_pipfile_hash(directory):
-    p = pipfile.load(directory + '/Pipfile')
+    p = pipfile.load(f'{directory}/Pipfile')
 
     return json.dumps({"result": p.hash})
 
