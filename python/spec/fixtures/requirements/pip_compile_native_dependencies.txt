@@ -6,7 +6,7 @@
 #
 asn1crypto==1.4.0         # via cryptography
 cffi==1.11.5              # via cryptography
-cryptography==2.2.2       # via -r requirements.in
+cryptography==41.0.0       # via -r requirements.in
 idna==2.10                # via cryptography
 numpy==1.22.3             # via -r requirements.in, pandas
 pandas==1.4.1             # via -r requirements.in
