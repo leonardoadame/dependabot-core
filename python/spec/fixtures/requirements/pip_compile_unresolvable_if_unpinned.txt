@@ -26,7 +26,7 @@ chardet==4.0.0
     # via requests
 cookies==2.2.1
     # via moto
-cryptography==3.4.7
+cryptography==41.0.0
     # via moto
 docker==5.0.0
     # via moto
