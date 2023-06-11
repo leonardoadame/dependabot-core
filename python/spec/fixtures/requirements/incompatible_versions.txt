@@ -18,7 +18,7 @@ cffi==1.14.6
     # via cryptography
 colorama==0.4.3
     # via awscli
-cryptography==3.4.8
+cryptography==41.0.0
     # via ansible-base
 docutils==0.15.2
     # via awscli
