@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "etag": "^1.8.0",
+    "etag": "^1.8.1",
     "Select2": "git+https://github.com/select2/select2.git#3.x"
   }
 }
