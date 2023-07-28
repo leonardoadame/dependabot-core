@@ -13,6 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "@dependabot-fixtures/npm-parent-dependency": "2.0.2",
-    "@dependabot-fixtures/npm-transitive-dependency": "1.0.0"
+    "@dependabot-fixtures/npm-transitive-dependency": "1.0.1"
   }
 }
