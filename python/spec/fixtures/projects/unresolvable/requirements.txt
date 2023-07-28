@@ -70,7 +70,7 @@ qtconsole==4.7.5          # via jupyter
 qtpy==1.9.0               # via qtconsole
 resampy==0.2.2            # via librosa
 scikit-learn==0.23.1      # via librosa
-scipy==1.5.1              # via librosa, resampy, scikit-learn
+scipy==1.8.0              # via librosa, resampy, scikit-learn
 send2trash==1.5.0         # via jupyter-server, notebook
 six==1.15.0               # via absl-py, bleach, cycler, jsonschema, librosa, packaging, pyrsistent, python-dateutil, resampy, traitlets
 soundfile==0.10.3.post1   # via librosa
