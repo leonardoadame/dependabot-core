@@ -1,0 +1,46 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - lerna > libnpm > npm-registry-fetch > make-fetch-happen > https-proxy-agent:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-HTTPSPROXYAGENT-469131
+        path: >-
+          lerna > libnpm > npm-registry-fetch > make-fetch-happen >
+          https-proxy-agent
+  SNYK-JS-LODASH-567746:
+    - lerna > @lerna/bootstrap > @lerna/command > lodash:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-LODASH-567746
+        path: lerna > @lerna/bootstrap > @lerna/command > lodash
+    - lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > lodash:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          lerna > @lerna/version > @lerna/conventional-commits >
+          conventional-changelog-core > lodash
+    - lerna > @lerna/version > @lerna/prompt > inquirer > lodash:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-LODASH-567746
+        path: lerna > @lerna/version > @lerna/prompt > inquirer > lodash
+    - lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-changelog-writer > lodash:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          lerna > @lerna/version > @lerna/conventional-commits >
+          conventional-changelog-core > conventional-changelog-writer > lodash
+    - lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-commits-parser > lodash:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          lerna > @lerna/version > @lerna/conventional-commits >
+          conventional-changelog-core > conventional-commits-parser > lodash
+    - lerna > @lerna/version > @lerna/conventional-commits > conventional-changelog-core > conventional-changelog-writer > handlebars > async > lodash:
+        patched: '2023-07-08T17:53:29.380Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          lerna > @lerna/version > @lerna/conventional-commits >
+          conventional-changelog-core > conventional-changelog-writer >
+          handlebars > async > lodash
