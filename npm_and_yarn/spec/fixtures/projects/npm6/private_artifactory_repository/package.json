@@ -3,9 +3,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "fetch-factory": "0.0.1"
+    "fetch-factory": "0.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "etag": "1.0.0"
-  }
+  },
+  "scripts": {
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
