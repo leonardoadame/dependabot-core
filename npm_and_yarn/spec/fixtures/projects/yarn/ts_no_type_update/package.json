@@ -5,7 +5,7 @@
   "author": "me",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.4.0",
+    "@babel/core": "^7.22.6",
     "jquery": "3.5",
     "node-forge": "1.0.0"
   },
