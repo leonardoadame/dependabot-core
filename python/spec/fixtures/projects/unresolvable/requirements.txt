@@ -60,7 +60,7 @@ prometheus-client==0.8.0  # via jupyter-server, notebook
 prompt-toolkit==3.0.5     # via ipython, jupyter-console
 ptyprocess==0.6.0         # via pexpect, terminado
 pycparser==2.20           # via cffi
-pygments==2.6.1           # via ipython, jupyter-console, jupyterlab-pygments, nbconvert, qtconsole, voila
+pygments==2.15.0           # via ipython, jupyter-console, jupyterlab-pygments, nbconvert, qtconsole, voila
 pyparsing==2.4.7          # via matplotlib, packaging
 pyrsistent==0.16.0        # via jsonschema
 python-dateutil==2.8.1    # via jupyter-client, matplotlib
