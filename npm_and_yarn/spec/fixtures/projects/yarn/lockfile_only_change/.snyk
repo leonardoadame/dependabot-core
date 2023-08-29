@@ -34,6 +34,10 @@ patch:
         patched: '2023-06-22T05:31:55.290Z'
     - jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
         patched: '2023-06-22T05:31:55.290Z'
+    - eslint-plugin-flowtype > lodash:
+        patched: '2023-08-29T20:36:07.060Z'
+        id: SNYK-JS-LODASH-567746
+        path: eslint-plugin-flowtype > lodash
   'npm:stringstream:20180511':
     - jest-cli > @jest/core > @jest/reporters > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > stringstream:
         patched: '2023-06-22T05:31:55.290Z'
