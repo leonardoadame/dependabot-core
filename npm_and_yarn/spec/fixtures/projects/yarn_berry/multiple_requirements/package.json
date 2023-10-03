@@ -1,7 +1,7 @@
 {
   "name": "{{ name }}",
   "dependencies": {
-    "next": "^12.3.1"
+    "next": "^13.5.4"
   },
   "devDependencies": {
     "eslint-plugin-tailwindcss": "^3.6.2",
