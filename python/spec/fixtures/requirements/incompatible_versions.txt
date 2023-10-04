@@ -53,5 +53,5 @@ s3transfer==0.3.7
     # via awscli
 six==1.16.0
     # via python-dateutil
-urllib3==1.26.6
+urllib3==1.26.17
     # via botocore
