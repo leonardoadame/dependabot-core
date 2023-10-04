@@ -64,7 +64,7 @@ pygments==2.6.1           # via ipython, jupyter-console, jupyterlab-pygments, n
 pyparsing==2.4.7          # via matplotlib, packaging
 pyrsistent==0.16.0        # via jsonschema
 python-dateutil==2.8.1    # via jupyter-client, matplotlib
-pyyaml==5.3.1             # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
+pyyaml==5.4             # via jupyter-contrib-nbextensions, jupyter-nbextensions-configurator
 pyzmq==19.0.1             # via jupyter-client, jupyter-server, notebook, qtconsole
 qtconsole==4.7.5          # via jupyter
 qtpy==1.9.0               # via qtconsole
