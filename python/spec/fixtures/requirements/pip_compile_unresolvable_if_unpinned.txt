@@ -87,7 +87,7 @@ six==1.16.0
     #   python-dateutil
     #   python-jose
     #   responses
-urllib3==1.26.5
+urllib3==1.26.18
     # via
     #   requests
     #   responses
