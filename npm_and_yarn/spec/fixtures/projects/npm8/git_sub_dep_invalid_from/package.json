@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "fetch-factory": "^0.0.1",
-    "web3": "0.18.4"
+    "web3": "1.2.0"
   }
 }
