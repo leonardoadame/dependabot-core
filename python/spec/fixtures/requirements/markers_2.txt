@@ -1,2 +1,2 @@
-cryptography<2.7; platform_machine != "x86_64"
-cryptography==2.7; platform_machine == "x86_64"
+cryptography<41.0.5; platform_machine != "x86_64"
+cryptography==41.0.5; platform_machine == "x86_64"
