@@ -26,7 +26,7 @@ chardet==4.0.0
     # via requests
 cookies==2.2.1
     # via moto
-cryptography==41.0.0
+cryptography==41.0.5
     # via moto
 docker==5.0.0
     # via moto
@@ -93,7 +93,7 @@ urllib3==1.26.5
     #   responses
 websocket-client==1.0.1
     # via docker
-werkzeug==2.0.1
+werkzeug==3.0.1
     # via moto
 wrapt==1.12.1
     # via aws-xray-sdk
