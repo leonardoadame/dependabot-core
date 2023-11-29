@@ -74,7 +74,7 @@
     "babel-eslint": "^8.1.2",
     "babel-jest": "^22.0.4",
     "babel-preset-flow": "^6.23.0",
-    "eslint": "^4.14.0",
+    "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.40.0",
@@ -84,7 +84,7 @@
     "flow-bin": "^0.61.0",
     "git-contributors": "^0.2.3",
     "husky": "^0.14.3",
-    "jest-cli": "^22.0.4",
+    "jest-cli": "^26.0.0",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.1",
     "semver": "^5.4.1"
