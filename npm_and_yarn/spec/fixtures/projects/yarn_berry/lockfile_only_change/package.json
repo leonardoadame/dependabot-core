@@ -10,13 +10,14 @@
     "lint": "eslint src",
     "precommit": "lint-staged && yarn test",
     "prepack": "yarn build",
-    "prepare": "yarn build",
+    "prepare": "yarn run snyk-protect && yarn build",
     "prepublishOnly": "yarn test",
     "preversion": "yarn test",
     "test": "yarn lint && yarn run flow && yarn build && yarn test-only",
     "test-only": "jest",
     "contrib": "./scripts/contrib.sh",
-    "tidy-ci": "yarn contrib"
+    "tidy-ci": "yarn contrib",
+    "snyk-protect": "snyk-protect"
   },
   "bin": {
     "github-changes": "./scripts/null-github-changes.sh",
@@ -87,11 +88,13 @@
     "jest-cli": "^22.0.4",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.1",
-    "semver": "^5.4.1"
+    "semver": "^5.4.1",
+    "@snyk/protect": "latest"
   },
   "jest": {
     "testEnvironment": "node",
     "collectCoverage": true,
     "coverageDirectory": "./coverage/"
-  }
+  },
+  "snyk": true
 }
