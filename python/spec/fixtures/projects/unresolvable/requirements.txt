@@ -34,7 +34,7 @@ jupyter-core==4.6.3       # via jupyter-client, jupyter-contrib-core, jupyter-co
 jupyter-highlight-selected-word==0.2.0  # via jupyter-contrib-nbextensions
 jupyter-latex-envs==1.4.6  # via jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator==0.4.1  # via -r requirements.in, jupyter-contrib-nbextensions
-jupyter-server==0.1.1     # via voila
+jupyter-server==2.11.2     # via voila
 jupyter==1.0.0            # via -r requirements.in
 jupyterlab-pygments==0.1.1  # via voila
 kiwisolver==1.2.0         # via matplotlib
