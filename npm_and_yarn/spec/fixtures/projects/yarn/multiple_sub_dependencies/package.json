@@ -11,6 +11,6 @@
   "dependencies": {
     "cosmiconfig": "3.0.0",
     "front-matter": "2.0.1",
-    "json-schema-ref-parser": "4.1.1"
+    "json-schema-ref-parser": "9.0.9"
   }
 }
