@@ -9,7 +9,7 @@ aws-xray-sdk==0.95        # via moto
 boto3==1.9.51             # via moto
 boto==2.49.0              # via moto
 botocore==1.12.51         # via boto3, moto, s3transfer
-certifi==2018.10.15       # via requests
+certifi==2023.7.22       # via requests
 cffi==1.11.5              # via cryptography
 chardet==3.0.4            # via requests
 cookies==2.2.1            # via moto
