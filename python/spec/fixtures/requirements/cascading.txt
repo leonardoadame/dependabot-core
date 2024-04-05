@@ -1,2 +1,2 @@
-requests==2.4.1
+requests==2.20
 -r ./more_requirements.txt
