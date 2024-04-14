@@ -17,7 +17,7 @@ cryptography==41.0.0       # via moto
 docker-pycreds==0.3.0     # via docker
 docker==3.5.1             # via moto
 docutils==0.14            # via botocore
-idna==2.7                 # via cryptography, requests
+idna==3.7                 # via cryptography, requests
 jinja2==2.10              # via moto
 jmespath==0.9.3           # via boto3, botocore
 jsondiff==1.1.1           # via moto
