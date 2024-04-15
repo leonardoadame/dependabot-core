@@ -18,7 +18,7 @@
   "homepage": "https://github.com/gocardless/bump-test#readme",
   "dependencies": {
     "chalk": "0.4.0",
-    "lodash": "^1.2.1",
+    "lodash": "^4.17.17",
     "stopwords": "0.0.1"
   },
   "devDependencies": {
