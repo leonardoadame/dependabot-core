@@ -36,7 +36,7 @@ ecdsa==0.17.0
     # via python-jose
 future==0.18.2
     # via python-jose
-idna==2.10
+idna==3.7
     # via requests
 jinja2==3.0.1
     # via moto
