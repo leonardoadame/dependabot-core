@@ -20,7 +20,7 @@
     "fetch-factory": "0.1.x"
   },
   "devDependencies": {
-    "lodash": "^3.0"
+    "lodash": "^4.17.17"
   },
   "resolutions": {
     "lodash": "3.10.0"
