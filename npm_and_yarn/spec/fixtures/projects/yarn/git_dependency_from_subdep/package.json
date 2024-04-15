@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/gocardless/bump-test#readme",
   "dependencies": {
-    "lodash": "^1.2.1",
+    "lodash": "^4.17.17",
     "chalk": "^2.0.0",
     "stopwords": "0.0.1",
     "is-number": "https://github.com/greysteil/is-number.git"
