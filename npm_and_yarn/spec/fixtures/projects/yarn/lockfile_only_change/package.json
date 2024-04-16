@@ -73,7 +73,7 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "6.26.0",
-    "babel-eslint": "^8.1.2",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.0",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^7.0.0",
@@ -84,7 +84,7 @@
     "eslint-plugin-jest": "^21.5.0",
     "eslint-plugin-prettier": "^2.4.0",
     "flow-bin": "^0.61.0",
-    "git-contributors": "^0.2.3",
+    "git-contributors": "^0.2.5",
     "husky": "^0.14.3",
     "jest-cli": "^27.0.0",
     "lint-staged": "^6.0.0",
