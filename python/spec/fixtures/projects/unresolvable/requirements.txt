@@ -44,7 +44,7 @@ lxml==4.5.2               # via jupyter-contrib-nbextensions
 markupsafe==1.1.1         # via jinja2
 matplotlib==3.3.0         # via -r requirements.in
 mistune==0.8.4            # via nbconvert
-nbconvert==5.6.1          # via jupyter, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-server, notebook, voila
+nbconvert==6.3.0b0          # via jupyter, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-server, notebook, voila
 nbformat==5.0.7           # via ipywidgets, jupyter-server, nbconvert, notebook
 notebook==6.0.3           # via jupyter, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-latex-envs, jupyter-nbextensions-configurator, widgetsnbextension
 numba==0.48.0             # via -r requirements.in, librosa, resampy
@@ -80,7 +80,7 @@ threadpoolctl==2.1.0      # via scikit-learn
 tornado==6.0.4            # via ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, jupyter-server, notebook, terminado
 tqdm==4.48.0              # via -r requirements.in
 traitlets==4.3.3          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-core, jupyter-latex-envs, jupyter-nbextensions-configurator, jupyter-server, nbconvert, nbformat, notebook, qtconsole
-voila==0.1.21             # via -r requirements.in
+voila==0.2.17             # via -r requirements.in
 wcwidth==0.2.5            # via prompt-toolkit
 webencodings==0.5.1       # via bleach
 widgetsnbextension==3.5.1  # via ipywidgets
