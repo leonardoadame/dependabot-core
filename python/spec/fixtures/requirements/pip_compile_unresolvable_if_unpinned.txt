@@ -93,7 +93,7 @@ urllib3==1.26.5
     #   responses
 websocket-client==1.0.1
     # via docker
-werkzeug==2.0.1
+werkzeug==3.0.3
     # via moto
 wrapt==1.12.1
     # via aws-xray-sdk
