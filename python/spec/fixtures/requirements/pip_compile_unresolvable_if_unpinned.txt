@@ -70,7 +70,7 @@ pytz==2021.1
     # via moto
 pyyaml==5.4.1
     # via pyaml
-requests==2.25.1
+requests==2.32.0
     # via
     #   aws-xray-sdk
     #   docker
