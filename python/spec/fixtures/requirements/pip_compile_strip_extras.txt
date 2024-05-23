@@ -16,7 +16,7 @@ lockfile==0.12.2
     # via cachecontrol
 msgpack==1.0.2
     # via cachecontrol
-requests==2.26.0
+requests==2.32.0
     # via cachecontrol
 urllib3==1.26.7
     # via requests
