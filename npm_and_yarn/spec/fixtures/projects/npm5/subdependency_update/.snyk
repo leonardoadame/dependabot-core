@@ -1,0 +1,560 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - jest > jest-cli > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > istanbul-lib-instrument > babel-types > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > istanbul-lib-instrument > babel-generator > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > istanbul-lib-instrument > babel-traverse > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > istanbul-lib-instrument > babel-template > lodash
+    - jest > jest-cli > jest-runtime > babel-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runtime > babel-core > lodash
+    - jest > jest-cli > istanbul-api > async > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > istanbul-api > async > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-lib-instrument > babel-generator >
+          babel-types > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-lib-instrument > babel-traverse >
+          babel-types > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-lib-instrument > babel-template >
+          babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runtime > babel-core > babel-types > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-types
+          > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runtime > babel-core > babel-generator > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-generator > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-lib-instrument > babel-template >
+          babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runtime > babel-core > babel-traverse > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runtime > babel-core > babel-template > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-template > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runner > jest-runtime > babel-core > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-register > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: jest > jest-cli > jest-runtime > babel-core > babel-register > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-generator >
+          babel-types > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-generator > babel-types > lodash
+    - jest > jest-cli > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-lib-instrument > babel-template >
+          babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-traverse >
+          babel-types > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-template >
+          babel-types > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-generator > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-generator > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-template >
+          babel-traverse > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-helpers >
+          babel-template > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-template > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-register > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-register > lodash
+    - jest > jest-cli > istanbul-api > istanbul-reports > handlebars > async > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-reports > handlebars > async
+          > lodash
+    - jest > jest-cli > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-environment-jsdom > jsdom >
+          request-promise-native > request-promise-core > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-generator > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-generator > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-template >
+          babel-traverse > babel-types > lodash
+    - jest > jest-cli > istanbul-api > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > istanbul-api > istanbul-lib-instrument >
+          babel-template > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-helpers >
+          babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-generator > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-generator > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-helpers >
+          babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-helpers > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-helpers > babel-template > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > lodash
+    - jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-config > jest-environment-jsdom > jsdom >
+          request-promise-native > request-promise-core > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-generator > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-generator > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-core > babel-helpers >
+          babel-template > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-template > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-traverse >
+          babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-helpers > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-helpers > babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-generator >
+          lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-helpers > babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse >
+          lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-template >
+          lodash
+    - jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom
+          > jsdom > request-promise-native > request-promise-core > lodash
+    - jest > jest-cli > jest-runner > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-config > jest-environment-jsdom >
+          jsdom > request-promise-native > request-promise-core > lodash
+    - jest > jest-cli > jest-validate > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-validate > jest-config > jest-environment-jsdom
+          > jsdom > request-promise-native > request-promise-core > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-generator > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-generator >
+          babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-core >
+          babel-helpers > babel-template > babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > babel-jest > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-traverse >
+          babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-plugin-istanbul >
+          istanbul-lib-instrument > babel-template > babel-traverse >
+          babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-traverse >
+          babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-template >
+          babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-template >
+          babel-traverse > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > jest-config >
+          jest-environment-jsdom > jsdom > request-promise-native >
+          request-promise-core > lodash
+    - jest > jest-cli > jest-runtime > jest-validate > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runtime > jest-validate > jest-config >
+          jest-environment-jsdom > jsdom > request-promise-native >
+          request-promise-core > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > babel-jest >
+          babel-plugin-istanbul > istanbul-lib-instrument > babel-template >
+          babel-traverse > babel-types > lodash
+    - jest > jest-cli > jest-runner > jest-runtime > jest-validate > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2024-05-26T07:47:52.079Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > jest-cli > jest-runner > jest-runtime > jest-validate >
+          jest-config > jest-environment-jsdom > jsdom > request-promise-native
+          > request-promise-core > lodash
