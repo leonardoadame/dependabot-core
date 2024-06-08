@@ -34,7 +34,7 @@ jupyter-core==4.6.3       # via jupyter-client, jupyter-contrib-core, jupyter-co
 jupyter-highlight-selected-word==0.2.0  # via jupyter-contrib-nbextensions
 jupyter-latex-envs==1.4.6  # via jupyter-contrib-nbextensions
 jupyter-nbextensions-configurator==0.4.1  # via -r requirements.in, jupyter-contrib-nbextensions
-jupyter-server==0.1.1     # via voila
+jupyter-server==2.14.1     # via voila
 jupyter==1.0.0            # via -r requirements.in
 jupyterlab-pygments==0.1.1  # via voila
 kiwisolver==1.2.0         # via matplotlib
@@ -69,7 +69,7 @@ pyzmq==19.0.1             # via jupyter-client, jupyter-server, notebook, qtcons
 qtconsole==4.7.5          # via jupyter
 qtpy==1.9.0               # via qtconsole
 resampy==0.2.2            # via librosa
-scikit-learn==0.23.1      # via librosa
+scikit-learn==1.5.0      # via librosa
 scipy==1.5.1              # via librosa, resampy, scikit-learn
 send2trash==1.5.0         # via jupyter-server, notebook
 six==1.15.0               # via absl-py, bleach, cycler, jsonschema, librosa, packaging, pyrsistent, python-dateutil, resampy, traitlets
@@ -77,7 +77,7 @@ soundfile==0.10.3.post1   # via librosa
 terminado==0.8.3          # via jupyter-server, notebook
 testpath==0.4.4           # via nbconvert
 threadpoolctl==2.1.0      # via scikit-learn
-tornado==6.0.4            # via ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, jupyter-server, notebook, terminado
+tornado==6.4.1            # via ipykernel, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-nbextensions-configurator, jupyter-server, notebook, terminado
 tqdm==4.48.0              # via -r requirements.in
 traitlets==4.3.3          # via ipykernel, ipython, ipywidgets, jupyter-client, jupyter-contrib-core, jupyter-contrib-nbextensions, jupyter-core, jupyter-latex-envs, jupyter-nbextensions-configurator, jupyter-server, nbconvert, nbformat, notebook, qtconsole
 voila==0.1.21             # via -r requirements.in
