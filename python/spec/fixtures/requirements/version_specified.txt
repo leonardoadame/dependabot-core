@@ -3,3 +3,4 @@ luigi==2.2.0
 pytest==3.4.0
 aiocache[redis]==0.10.0
 attrs==18.0.0
+tornado>=6.4.1 # not directly required, pinned by Snyk to avoid a vulnerability
