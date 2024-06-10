@@ -6,6 +6,12 @@
     "apollo-client": "^2.3.5",
     "graphql": "^0.13.2",
     "react": "^16.6.0",
-    "react-apollo": "2.1.8"
-  }
+    "react-apollo": "2.1.8",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
