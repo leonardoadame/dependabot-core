@@ -1,0 +1,57 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - graphql-cli > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: graphql-cli > lodash
+    - graphql-cli > inquirer > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: graphql-cli > inquirer > lodash
+    - graphql-cli > express-request-proxy > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: graphql-cli > express-request-proxy > lodash
+    - graphql-cli > graphql-schema-linter > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: graphql-cli > graphql-schema-linter > lodash
+    - graphql-cli > express-request-proxy > async > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: graphql-cli > express-request-proxy > async > lodash
+    - graphql-cli > graphql-config-extension-graphcool > graphcool-yml > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          graphql-cli > graphql-config-extension-graphcool > graphcool-yml >
+          lodash
+    - graphql-cli > tmp-graphql-config-extension-openapi > @kbrandwijk/swagger-to-graphql > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          graphql-cli > tmp-graphql-config-extension-openapi >
+          @kbrandwijk/swagger-to-graphql > lodash
+    - graphql-cli > apollo-codegen > apollo-codegen-core > graphql-config > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          graphql-cli > apollo-codegen > apollo-codegen-core > graphql-config >
+          lodash
+    - graphql-cli > graphql-cli-prepare > graphql-static-binding > cucumber-html-reporter > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          graphql-cli > graphql-cli-prepare > graphql-static-binding >
+          cucumber-html-reporter > lodash
+    - graphql-cli > tmp-graphql-config-extension-openapi > @kbrandwijk/swagger-to-graphql > request-promise > request-promise-core > lodash:
+        patched: '2024-06-14T02:04:55.581Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          graphql-cli > tmp-graphql-config-extension-openapi >
+          @kbrandwijk/swagger-to-graphql > request-promise >
+          request-promise-core > lodash
