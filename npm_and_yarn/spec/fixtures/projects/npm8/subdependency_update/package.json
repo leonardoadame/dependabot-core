@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -17,11 +19,13 @@
   },
   "homepage": "https://github.com/waltfy/PROTO_TEST#readme",
   "dependencies": {
-    "fetch-factory": "^0.0.1"
+    "fetch-factory": "^0.0.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-register": "^6.24.1",
-    "jest": "22.0.4"
-  }
+    "jest": "28.0.0"
+  },
+  "snyk": true
 }
