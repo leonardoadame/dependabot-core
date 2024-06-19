@@ -18,5 +18,5 @@ msgpack==1.0.2
     # via cachecontrol
 requests==2.26.0
     # via cachecontrol
-urllib3==1.26.7
+urllib3==1.26.19
     # via requests
