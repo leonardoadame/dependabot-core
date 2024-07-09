@@ -4,3 +4,4 @@
 #    pip-compile --resolver=legacy
 #
 celery[sqs]==5.2.7
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
