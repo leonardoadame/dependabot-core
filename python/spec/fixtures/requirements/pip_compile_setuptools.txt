@@ -6,4 +6,4 @@
 #
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==40.4.1
+setuptools==70.0.0
