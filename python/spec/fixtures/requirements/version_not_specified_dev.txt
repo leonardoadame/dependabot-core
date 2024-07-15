@@ -1,3 +1,4 @@
 -i https://pypi.org/simple
 py==1.5.2
 pytest==3.2.3
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
