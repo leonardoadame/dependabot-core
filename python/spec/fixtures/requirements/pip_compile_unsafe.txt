@@ -10,4 +10,4 @@ pycodestyle==2.4.0        # via flake8
 pyflakes==2.0.0           # via flake8
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==40.4.3        # via flake8
+setuptools==70.0.0        # via flake8
