@@ -17,3 +17,4 @@ pytest-forked==0.2        # via pytest-xdist
 pytest-xdist==1.22.5
 pytest==3.7.2
 six==1.11.0               # via mock, more-itertools, pytest, pytest-xdist
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
