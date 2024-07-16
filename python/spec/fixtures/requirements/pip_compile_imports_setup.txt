@@ -21,3 +21,4 @@ pytest-xdist==1.23.0
 pytest==3.7.4
 raven==5.32.0
 six==1.11.0               # via mock, more-itertools, pytest, pytest-xdist
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
