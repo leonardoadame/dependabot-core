@@ -18,6 +18,6 @@
   "homepage": "https://github.com/gocardless/bump-test#readme",
   "dependencies": {
     "bus-replacement-service": "hmarr/dependabot-test-private-npm-package",
-    "query-string": "^5.0.1"
+    "query-string": "^7.1.3"
   }
 }
