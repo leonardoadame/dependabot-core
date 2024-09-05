@@ -9,8 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cosmiconfig": "3.0.0",
-    "front-matter": "2.0.1",
+    "cosmiconfig": "5.2.1",
+    "front-matter": "3.0.2",
     "json-schema-ref-parser": "4.1.1"
   }
 }
