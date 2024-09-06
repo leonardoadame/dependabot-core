@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "author": "Harry Marr <harry.marr@gmail.com>",
   "dependencies": {
-    "react-burger-menu": "1.8.4"
+    "react-burger-menu": "1.9.1"
   }
 }
