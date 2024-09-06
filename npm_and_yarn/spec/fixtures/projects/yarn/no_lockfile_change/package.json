@@ -20,8 +20,8 @@
     "fetch-factory": "^0.0.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.2",
     "babel-register": "^6.24.1",
-    "jest": "22.0.4"
+    "jest": "27.0.1"
   }
 }
