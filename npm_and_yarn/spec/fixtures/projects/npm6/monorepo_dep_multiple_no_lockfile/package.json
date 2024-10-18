@@ -18,7 +18,7 @@
     "homepage": "https://github.com/waltfy/PROTO_TEST#readme",
     "dependencies": {
         "fetch-factory": "^0.0.1",
-        "vue": "2.5.20",
+        "vue": "3.0.0",
         "vue-template-compiler": "2.5.20"
     }
 }
