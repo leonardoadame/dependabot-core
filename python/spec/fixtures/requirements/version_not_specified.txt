@@ -1,2 +1,2 @@
 psycopg2
-luigi==2.2.0
+luigi==3.6.0
