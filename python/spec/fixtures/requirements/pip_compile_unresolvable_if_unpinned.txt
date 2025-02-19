@@ -64,7 +64,7 @@ python-dateutil==2.8.1
     # via
     #   botocore
     #   moto
-python-jose==2.0.2
+python-jose==3.4.0
     # via moto
 pytz==2021.1
     # via moto
