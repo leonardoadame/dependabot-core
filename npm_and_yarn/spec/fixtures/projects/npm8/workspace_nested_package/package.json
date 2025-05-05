@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^11.2.2"
   },
   "license": "MIT",
   "private": true
