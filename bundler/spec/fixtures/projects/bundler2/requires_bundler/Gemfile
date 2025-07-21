@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "guard-bundler", "~> 2.2.1"
+gem "guard-bundler", "~> 3.0.0"
