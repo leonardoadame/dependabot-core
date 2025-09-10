@@ -97,5 +97,5 @@ werkzeug==2.0.1
     # via moto
 wrapt==1.12.1
     # via aws-xray-sdk
-xmltodict==0.12.0
+xmltodict==0.15.0
     # via moto
