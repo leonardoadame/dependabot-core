@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-ansible==2.10.4
+ansible==12.0.0
     # via -r requirements.in
 ansible-base==2.10.13
     # via ansible
@@ -53,5 +53,5 @@ s3transfer==0.3.7
     # via awscli
 six==1.16.0
     # via python-dateutil
-urllib3==1.26.6
+urllib3==2.6.0
     # via botocore
