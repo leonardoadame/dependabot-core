@@ -87,13 +87,13 @@ six==1.16.0
     #   python-dateutil
     #   python-jose
     #   responses
-urllib3==1.26.5
+urllib3==2.6.3
     # via
     #   requests
     #   responses
 websocket-client==1.0.1
     # via docker
-werkzeug==2.0.1
+werkzeug==3.1.5
     # via moto
 wrapt==1.12.1
     # via aws-xray-sdk
