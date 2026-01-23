@@ -18,6 +18,6 @@
   "homepage": "https://github.com/dsp-testing/dependabot-consume-private-registries#readme",
   "dependencies": {
     "@dsp-testing/inner-source-top-secret-npm-2": "1.0.3",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.23"
   }
 }
